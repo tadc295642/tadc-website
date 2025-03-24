@@ -1,53 +1,109 @@
+/* 全局赛博朋克风格 */
 body {
-    font-family: Arial, sans-serif;
-    background-color: #111;
+    font-family: 'Orbitron', sans-serif;
+    background: #0d0f24; /* 深蓝紫色背景 */
     color: #fff;
     text-align: center;
 }
 
+/* 头部 */
 header {
-    background: #ffcc00;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     padding: 20px;
-    font-size: 24px;
+    background: linear-gradient(90deg, #ff00ff, #00ffff);
     color: #000;
 }
 
-.hero {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 20px;
+.logo {
+    font-size: 24px;
+    font-weight: bold;
 }
 
-.clown img {
-    width: 200px;
-}
-
-.intro {
-    max-width: 400px;
-}
-
-button {
+/* 钱包按钮 */
+.wallet-btn {
     background: #ff3300;
     color: white;
     padding: 10px 20px;
     border: none;
-    cursor: pointer;
-    font-size: 18px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
 }
 
-button:hover {
+.wallet-btn:hover {
     background: #cc0000;
 }
 
-.market, .nft {
-    margin: 40px;
-    padding: 20px;
-    border: 2px solid #ffcc00;
+/* 角色区域 */
+.characters {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 40px;
 }
 
+.character {
+    background: rgba(0, 0, 0, 0.8);
+    padding: 20px;
+    margin: 20px;
+    border-radius: 10px;
+    width: 250px;
+    color: #fff;
+    text-align: center;
+    box-shadow: 0 0 10px #ff00ff;
+    transition: 0.3s;
+}
+
+.character:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 20px #00ffff;
+}
+
+/* 购买按钮 */
+.purchase-btn {
+    background: #00ffcc;
+    color: black;
+    padding: 10px 20px;
+    border: none;
+    text-decoration: none;
+    font-weight: bold;
+    display: inline-block;
+    margin-top: 10px;
+}
+
+.purchase-btn:hover {
+    background: #ff00ff;
+    color: white;
+}
+
+/* 市场动态 */
+.market {
+    margin-top: 40px;
+    padding: 20px;
+    background: #222;
+    box-shadow: 0 0 15px #00ffcc;
+}
+
+/* 底部社交媒体链接 */
 footer {
     background: #222;
     padding: 10px;
     font-size: 14px;
+}
+
+.social-links {
+    margin-bottom: 10px;
+}
+
+.social-icon {
+    font-size: 24px;
+    margin: 0 15px;
+    color: #00ffcc;
+    text-decoration: none;
+}
+
+.social-icon:hover {
+    color: #ff00ff;
 }
